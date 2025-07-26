@@ -1,0 +1,13 @@
+DATABASES = {
+    'default': {
+        # ...existing code...
+        'HOST': 'localhost',  # was 'postgres'
+        # ...existing code...
+    }
+}
+
+INSTALLED_APPS = [
+    # ...existing code...
+    'graphene_django',
+    # ...existing code...
+]

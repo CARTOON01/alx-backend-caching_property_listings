@@ -66,7 +66,7 @@ DATABASES = {
         'NAME': 'property_db',
         'USER': 'property_user',
         'PASSWORD': 'property_pass',
-        'HOST': 'postgres',
+        'HOST': 'localhost',  # changed from 'postgres'
         'PORT': '5432',
     }
 }
@@ -115,7 +115,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://redis:6379/1",
+        "LOCATION": "redis://localhost:6379/1",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
